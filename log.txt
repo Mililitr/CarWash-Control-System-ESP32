@@ -1,0 +1,11 @@
+[2024-08-15 10:23:41] [CRITICAL] WATER_PRESSURE_LOW (1.2 bar < 2.0 bar)
+[2024-08-15 10:23:41] EMERGENCY STOP on Post 3
+[2024-08-15 10:23:42] Valve state: WATER=OFF, FOAM=OFF, WAX=OFF
+[2024-08-15 10:23:43] Active session refund: 50₽ to card ****1234
+[2024-08-15 10:23:45] Notification sent: technician@carwash.ru
+[2024-08-15 10:23:46] System state: SAFE_MODE
+
+Stack trace:
+0x400D3C21: PressureSensor::read() at PressureSensor.cpp:87
+0x400D3F8A: SafetySystem::checkPressure() at SafetySystem.cpp:142
+0x400D4231: mainLoop() at MainController.cpp:213
